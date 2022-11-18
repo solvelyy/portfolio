@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+a{text-decoration: none; color: inherit;}
+body{width: 100%; background-color: #fff; font: 500 13px/1.5em 'Dosis', sans-serif; 
+    color: #333;}
+
+.disney{background-color: #0d4777; color: white;}
+.mc{background-color:#FFBC0D; color: #B32026;}
+.museum{background-color: #917382; color: #ccc;}
+.seoul{background-color: #009857; color: beige;}
+.hanssem{background-color: #0057A0;color: #FFBC0D;}
+
+.disney_btn{background: linear-gradient(120deg,#0D4777,#426582,#1AE8D7);}
+.disney_btn:hover{color: #0D4777;}
+.mc_btn{background: linear-gradient(120deg,#FFBC0D,#E87E1A,#827042);}
+.mc_btn:hover{color: #B32026;}
+.museum_btn{background: linear-gradient(120deg,#AE1AE8,#824263,#927383);}
+.museum_btn:hover{color: #917382;}
+.seoul_btn{background: linear-gradient(120deg,#009857,#1AE81A,#428266);}
+.seoul_btn:hover{color: #009857;}
+.hs_btn{background: linear-gradient(120deg,#0057A0,#4DAFFF,#008CFF);}
+.hs_btn:hover{color: #0D4777;}
+
+
+/*960px 이상(웹)*/
+@media screen and (min-width:960px){
+    /* 고정 그리드 구성*/
+	.box_block {width: 960px; min-width: 960px; overflow:hidden; margin:0 auto;}/* 단락 마무리*/
+	.block1, .block2, .block3, .block4, .block5, .block6, .block7, .block8, .block9, .block10, .block11, .block12{float:left; margin-left:10px; margin-right:10px;}/*공통내용*/
+
+	.block1{width:60px;} /* ( 60 * 1 ) + ( 20 * (1 - 1) ) = 60*/
+	.block2{width:140px;} /* ( 60 * 2 ) + ( 20 * (2 - 1) ) = 140*/
+	.block3{width:220px;} /* ( 60 * 3 ) + ( 20 * (3 - 1) ) = 220*/
+	.block4{width:300px;} /* ( 60 * 4 ) + ( 20 * (4 - 1) ) = 300*/
+	.block5{width:380px;} /* ( 60 * 5 ) + ( 20 * (5 - 1) ) = 380*/
+	.block6{width:460px;} /* ( 60 * 6 ) + ( 20 * (6 - 1) ) = 460*/
+	.block7{width:540px;} /* ( 60 * 7 ) + ( 20 * (7 - 1) ) = 540*/
+	.block8{width:620px;} /* ( 60 * 8 ) + ( 20 * (8 - 1) ) = 620*/
+	.block9{width:700px;} /* ( 60 * 9 ) + ( 20 * (9 - 1) ) = 700*/
+	.block10{width:780px;} /* ( 60 * 10 ) + ( 20 * (10 - 1) ) = 780*/
+	.block11{width:860px;} /* ( 60 * 11 ) + ( 20 * (11 - 1) ) = 860*/
+	.block12{width:940px;} /* ( 60 * 12 ) + ( 20 * (12 - 1) ) = 940*/
+    
+    #top{width: 100%; height: 100px; font-family: 'Dosis', sans-serif;}
+    .all_menu{display: none;}
+    #top h1{float: left; margin-left: 2%; font-size: 3em; line-height: 1em;
+         margin-top: 30px;}
+    .close{display: none;}
+    #menu_title{display: none;}
+    #gnb{text-align: center; padding-top: 40px; width: 60%; margin: 0 auto;}
+    #gnb ul li{display: inline; margin: 20px;}
+    #gnb ul li a{font-size: 16px; font-weight: bold;}
+    #gnb ul li a:hover{color: #999;}
+
+    .title{border-bottom: 3px dotted #666; color: #824242;
+         text-align: center; font-size: 40px; 
+        padding-bottom: 30px; margin: 30px 0; letter-spacing: 20px;}
+
+    .ex{min-width:938px;height: 300px; padding: 30px 0; margin: 30px 0;}
+    .ex img{width: 600px;height: 300px; float: left; margin:0 12px;}
+    .ex figure{width: 300px;height: 300px; float: left;text-align: center;  margin-left: 5px;}
+    .ex figure h3{letter-spacing: 0.12em; display: block; letter-spacing: .4em; font-size: 30px; margin-top: 50px;}
+
+    .ex .museum h3{margin-top: 15px;font-size: 24px;}
+    .museum .logo{margin-bottom: 30px;}
+    
+    .logo{width: 300px;height: 90px;display: flex; justify-content: center; align-items: center; 
+        background-color: rgba(255,255,255,0.8); margin-bottom: 35px;}
+    .logo img{width: 150px;height: 60px;}
+
+    .subtitle{height: 35px; line-height: 35px; text-align: center; font-size: 14px; 
+        letter-spacing: 0.12em; }
+    .btn {width: 300px; height: 50px; line-height: 50px; margin: 0 auto;font-size: 14px; background-size: 200%;color: #fff;transition: .5s;}
+    .btn:hover{font-weight: bold;background: white;}
+    .btn a { display: block; }
+    
+    #bottom{background-color: #ccc; color: #666; padding: 20px 0; text-align: center;
+        letter-spacing: 2px;font-weight: 500;}
+}
+
+/* ~959px(태블릿)*/
+@media screen and (max-width:959px){
+	.box_block {width:100%; overflow:hidden; margin: 0 auto; min-width: 320px;}/* min-width추가 */
+
+	.block1, .block2, .block3, .block4, .block5, .block6, .block7, .block8, .block9, .block10, .block11, .block12{float:left; margin-left:2%;}/*공통*/
+	/*.box_block [class*="block"]:first-child{margin-left:0;}.box_block 안의 요소 중에 클래스 속성이 block를 포함하고 있는 요소 중에 첫번째 항목 => 왼쪽바깥여백을 없앰*/
+
+	.block1{width:6.5%;} /* ( 6.5% * 1 ) + ( 2% * ( 1 - 1 ) ) = 6.5% */
+	.block2{width:15%;} /* ( 6.5% * 2 ) + ( 2% * ( 2 - 1 ) ) = 15% */
+	.block3{width:23.5%;} /* ( 6.5% * 3 ) + ( 2% * ( 3 - 1 ) ) = 23.5% */
+	.block4{width:32%;} /* ( 6.5% * 4 ) + ( 2% * ( 4 - 1 ) ) = 32% */
+	.block5{width:40.5%;} /* ( 6.5% * 5 ) + ( 2% * ( 5 - 1 ) ) = 40.5% */
+	.block6{width:49%;} /* ( 6.5% * 6 ) + ( 2% * ( 6 - 1 ) ) = 49% */
+	.block7{width:57.5%;} /* ( 6.5% * 7 ) + ( 2% * ( 7 - 1 ) ) = 57.5% */
+	.block8{width:66%;} /* ( 6.5% * 8 ) + ( 2% * ( 8 - 1 ) ) = 66% */
+	.block9{width:74.5%;} /* ( 6.5% * 9 ) + ( 2% * ( 9 - 1 ) ) = 74.5% */
+	.block10{width:83%;} /* ( 6.5% * 10 ) + ( 2% * ( 10 - 1 ) ) = 83% */
+	.block11{width:91.5%;} /* ( 6.5% * 11 ) + ( 2% * ( 11 - 1 ) ) = 91.5% */
+	.block12{width:100%;} /* ( 6.5% * 12 ) + ( 2% * ( 12 - 1 ) ) = 100% */
+    
+    #top{width: 100%; height: 60px; font-family: 'Dosis', sans-serif;}
+    .all_menu{float: left; cursor: pointer; margin: 20px;}
+    .all_menu img{width: 60%;}
+    #top h1{font-size: 30px; line-height: 1em; text-align: center; width: 70%; 
+        margin: 0 auto; padding-top: 15px;}
+    #menu_wrap{width: 250px; height: 100%; position: fixed; left: -250px; top: 0; 
+        background-color: #fff; z-index: 999;}
+    .close{position: absolute; top: 5px; right: 5px; cursor: pointer; transition: all 0.3s;}
+    .close:hover{transform: rotate(180deg);}
+
+    #menu_title{background-color: #ccc; height: 100px; }
+    #menu_title p{padding-top: 50px; text-indent: 1em; font-size:24px;}
+    #gnb ul li{text-indent: 1em; height: 3em; line-height: 3em; font-size: 16px; 
+        border-bottom: 1px solid #ccc; transition: all 0.5s;
+        background: url("../images/icn_down.png") no-repeat right center;}
+    #gnb ul li:hover{background-image: url("../images/icn_up.png");}
+    #gnb ul li a{display: block; color: #999;}
+    .quick{display: none;}
+
+    .title{border-bottom: 1px solid #ccc; color: #824242;text-align: center; font-size: 20px; 
+       padding-bottom: 15px; margin: 15px 0; letter-spacing: 10px;}
+
+    .ex{width: 650px; height: 220px; padding: 15px 0; margin: 20px auto;}
+    .ex img{width: 400px;height: 200px; float: left; margin:0 6px;}
+    .ex figure{width: 224px;height: 200px; float: left;text-align: center; margin-left: 5px;}
+    .ex figure h3{letter-spacing: 0.12em; display: block; letter-spacing: .4em; font-size: 20px; margin-top: 25px;}
+
+    .ex .museum h3{margin-top: 12px;font-size: 16px;}
+    .museum .subtitle{margin-bottom: 12px;}
+
+    .logo{width: 224px;height: 50px;display: flex; justify-content: center; align-items: center; 
+        background-color: rgba(255,255,255,0.8); margin-bottom: 15px;}
+    .logo img{width: 100px;height: 40px;}
+
+    .subtitle{height: 20px; line-height: 20px; text-align: center; font-size: 14px; 
+        letter-spacing: 0.12em;margin-bottom: 20px; }
+    .btn {width: 160px; height: 30px; line-height: 30px; margin: 0 auto;font-size: 14px; background-size: 200%;color: #fff;transition: .5s;}
+    .btn:hover{font-weight: bold;background: white;}
+    .btn a { display: block; }
+
+    #bottom{background-color: #ccc; color: #666; padding: 20px 0; text-align: center;
+        letter-spacing: 2px;font-weight: 500;}
+    #bottom span{display: block;}
+}
